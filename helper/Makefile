@@ -1,4 +1,4 @@
-addunm.o: addnum.c 
+addnum.o: addnum.c 
 	$(CC) -c addnum.c
 
 clean:
