@@ -1,14 +1,14 @@
 CC = gcc
 
-main: main.c helper/addnum.o
-	$(CC) -o main main.c helper/addnum.o
+main: main.c apple/addnum.o
+	$(CC) -o main main.c apple/addnum.o
 
-helper/addnum.o: helper/addnum.c
-	echo "*** building helper/addnum.o ***"
-	cd helper/ && $(MAKE) CC='$(CC)'
+apple/addnum.o: apple/addnum.c
+	echo "*** building apple/addnum.o ***"
+	cd apple/ && $(MAKE) CC='$(CC)'
 
 clean:
-	@cd helper && $(MAKE) clean
+	@cd apple && $(MAKE) clean
 	@rm -f *.o main
 
 .PHONY: clean
