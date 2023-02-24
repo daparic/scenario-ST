@@ -1,4 +1,4 @@
-# ST
+# Simulation Test (ST)
 
 ```
 git clone https://github.com/daparic/scenario-ST
